@@ -1,0 +1,38 @@
+
+version: 2
+
+models:
+  - name: Location_wise
+    description: "Location wise death rate and recovery rate"
+    columns:
+      - name: total_cases
+        tests:
+          - not_null
+
+  - name: New_cases_datewise
+    description: "date wise increasing rate"
+    columns:
+      - name: date
+        tests:
+          - not_null
+
+  - name: Total_regencies
+    description: "Location wise regencies"
+    columns:
+      - name: TOTAL_REGENCIES
+        tests:
+          - not_null
+
+  - name: country_growth_factor
+    description: "whole countrygrowth factor"
+    columns:
+      - name: growth_factor_of_new_deaths
+        tests:
+          - not_null
+
+  - name: island_deaths
+    description: "total island deaths"
+    columns:
+      - name: deaths
+        tests:
+          - not_null

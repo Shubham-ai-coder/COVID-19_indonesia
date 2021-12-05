@@ -1,0 +1,3 @@
+select country,continent,avg(population)as population,avg(POPULATION_DENSITY)as population_density,avg(TOTAL_DEATHS_PER_MILLION)as total_deaths_permillion,avg(GROWTH_FACTOR_OF_NEW_DEATHS)as growth_factor_of_new_deaths
+from"FIVETRAN_INTERVIEW_DB"."GOOGLE_SHEETS"."COVID_19_INDONESIA_SHUBHAM_CHOUDHARY"
+group by country,continent
